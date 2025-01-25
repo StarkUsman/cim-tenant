@@ -6,5 +6,5 @@ router.get('/:id', tenantController.getById);
 router.post('/', tenantController.save);
 router.patch('/:id', tenantController.updateById);
 router.delete('/:id', tenantController.deleteById);
-router.delete('/:adminToken', tenantController.deleteAll);
+router.delete('/admin/delete-all/:adminToken', tenantController.deleteAll);
 module.exports = router
